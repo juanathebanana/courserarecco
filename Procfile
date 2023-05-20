@@ -1,1 +1,1 @@
-web: python wesite
+web: python wesite.py
