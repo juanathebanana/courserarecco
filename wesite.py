@@ -29,9 +29,7 @@ def recommend(course):
     return recommended_course_names
 
 
-st.subheader('Progress bar')
-st.progress(10)
-st.subheader('Wait the execution')
+
 
 st.markdown("<h2 style='text-align: center; color: blue;'>Coursera Course Recommendation System</h2>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: black;'>bdt project!</h4>", unsafe_allow_html=True)
