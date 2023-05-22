@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import requests
+import datetime
 
 # <==== Code starts here ====>
 st.balloons()
@@ -30,7 +31,12 @@ def recommend(course):
 st.markdown("<h2 style='text-align: center; color: blue;'>Coursera Course Recommendation System</h2>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: black;'>bdt project!</h4>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: black;'>Web App created by Mattia,Juana,Bilal</h4>", unsafe_allow_html=True)
+
 st.radio('Pick your gender',['Male','Female','Other'])
+d = st.date_input(
+    "When\'s your birthday",
+    datetime.date(2019, 7, 6))
+st.write('Your birthday is:', d)
 
 course_list = courses_list['course_name'].values
 selected_course = st.selectbox(
