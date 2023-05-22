@@ -12,7 +12,7 @@ import requests
 
 # <==== Code starts here ====>
 st.balloons()
-st.radio('Pick your gender',['Male','Female','Other'])
+
 
 courses_list = pickle.load(open('courses.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
@@ -30,6 +30,7 @@ def recommend(course):
 st.markdown("<h2 style='text-align: center; color: blue;'>Coursera Course Recommendation System</h2>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: black;'>bdt project!</h4>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: black;'>Web App created by Mattia,Juana,Bilal</h4>", unsafe_allow_html=True)
+st.radio('Pick your gender',['Male','Female','Other'])
 
 course_list = courses_list['course_name'].values
 selected_course = st.selectbox(
