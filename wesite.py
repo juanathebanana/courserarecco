@@ -12,10 +12,9 @@ import requests
 
 # <==== Code starts here ====>
 
-courses_file = open('/home/juana/Desktop/coursera/courses.pkl','rb')
-courses_list = pickle.load(courses_file)
-similarity_file=open('/home/juana/Desktop/coursera/similarity.pkl','rb')
-similarity = pickle.load(similarity_file)
+
+courses_list = pickle.load(open('courses.pkl','rb'))
+similarity = pickle.load(open('similarity.pkl','rb'))
 
 def recommend(course):
     index = courses_list[courses_list['course_name'] == course].index[0]
