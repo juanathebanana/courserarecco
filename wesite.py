@@ -29,7 +29,8 @@ def recommend(course):
     return recommended_course_names
 
 
-st.progress(10)with st.spinner('Wait for it...'):    
+st.progress(10)
+with st.spinner('Wait for it...'):    
 time.sleep(10)
 
 st.markdown("<h2 style='text-align: center; color: blue;'>Coursera Course Recommendation System</h2>", unsafe_allow_html=True)
