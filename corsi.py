@@ -96,6 +96,6 @@ def recommend(course):
     for i in course_list:
         print(new_df.iloc[i[0]].course_name)
 
-pickle.dump(similarity,open('similarity.pkl','wb'))
-pickle.dump(new_df.to_dict(),open('course_list.pkl','wb')) #contains the dataframe in dict
-pickle.dump(new_df,open('courses.pkl','wb'))
+#pickle.dump(similarity,open('similarity.pkl','wb'))
+#pickle.dump(new_df.to_dict(),open('course_list.pkl','wb')) #contains the dataframe in dict
+#pickle.dump(new_df,open('courses.pkl','wb'))
