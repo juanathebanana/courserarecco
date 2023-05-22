@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import requests
 import datetime
-from storing.data import create_usertable
+
 
 # <==== Code starts here ====>
 st.balloons()
