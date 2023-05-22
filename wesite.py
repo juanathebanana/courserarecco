@@ -12,6 +12,7 @@ import requests
 
 # <==== Code starts here ====>
 st.balloons()
+st.radio('Pick your gender',['Male','Female','Other'])
 
 courses_list = pickle.load(open('courses.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
