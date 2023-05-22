@@ -1,1 +1,1 @@
-web: python wesite.py
+web: streamlit run wesite.py
